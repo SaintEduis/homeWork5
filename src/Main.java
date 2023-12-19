@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner newObject = new Scanner(System.in);
         //Exercise 1
         System.out.println("Введите вашу систему: ");
@@ -57,11 +56,11 @@ public class Main {
             System.out.println("Потребуется дней: " + daysForDelivery);
         }
         else if (deliveryDistance <= 60){
-            deliveryDistance += 1;
+            daysForDelivery += 1;
             System.out.println("Потребуется дней: " + daysForDelivery);
         }
         else if (deliveryDistance <= 100){
-            deliveryDistance += 2;
+            daysForDelivery += 2;
             System.out.println("Потребуется дней: " + daysForDelivery);
         }
         else{
@@ -72,32 +71,21 @@ public class Main {
         int monthNumber = newObject.nextInt();
 
         switch (monthNumber){
-            case 1:
+            case 1, 2, 12:
                 System.out.println("Месяц зимнего сезона");
-            case 2:
-                System.out.println("Месяц зимнего сезона");
-            case 3:
+                break;
+            case 3, 4, 5:
                 System.out.println("Месяц весеннего сезона");
-            case 4:
-                System.out.println("Месяц весеннего сезона");
-            case 5:
-                System.out.println("Месяц весеннего сезона");
-            case 6:
+                break;
+            case 6, 7, 8:
                 System.out.println("Месяц летнего сезона");
-            case 7:
-                System.out.println("Месяц летнего сезона");
-            case 8:
-                System.out.println("Месяц летнего сезона");
-            case 9:
+                break;
+            case 9, 10, 11:
                 System.out.println("Месяц осеннего сезона");
-            case 10:
-                System.out.println("Месяц осеннего сезона");
-            case 11:
-                System.out.println("Месяц осеннего сезона");
-            case 12:
-                System.out.println("Месяц зимнего сезона");
+                break;
             default:
                 System.out.println("Нет такого месяца");
+                break;
         }
     }
 }
