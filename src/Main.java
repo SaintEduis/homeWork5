@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner newObject = new Scanner(System.in);
         //Exercise 1
         System.out.println("Введите вашу систему: ");
